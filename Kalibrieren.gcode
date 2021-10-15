@@ -4,10 +4,16 @@
 ;Dieser Code ist für ein Druckbett von 300x300mm geschrieben worden.
 ;Bei kleineren Druckbetten muss der G1 Code zum Anfahren der einzelnen Punkte angepasst werden
 
-;M104 S50     ;Düse vorheizen
-;M190 S30     ;Bett vorheizen und warten, bis das Bett die Temperatur erreicht hat
+;***************************************************************
+;Achtung, Benutzung auf eigene Gefahr. Der Drucker kann gegen
+;Anschläge knallen oder die Zahnriemen überspringen
+;Bei der ersten Nutzung auf schnelles Ausschalten vorbereiten
+;***************************************************************
+;In diesem Script ist das Düsen und Druckbett heizen auskommentiert!!
+;M104 S200    ;Düse vorheizen
+;M190 S60     ;Bett vorheizen und warten, bis das Bett die Temperatur erreicht hat
 ;M105         ;Temperatur auf Display anzeigen
-;M109 S50     ;Warte, bis die Düse aufgeheizt ist
+;M109 S200    ;Warte, bis die Düse aufgeheizt ist
 ;G1 Z5.0      ;Zur Sicherheit die Düse etwas anheben
 G28          ;Alle Achsen zum Nullpunkt fahren
 ;----ab hier wiederholt sich der Code, um die einzelnen Punkte anzufahren----
